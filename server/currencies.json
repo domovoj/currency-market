@@ -138,5 +138,15 @@
     "sum": 500,
     "city": "Lutsk",
     "contact": "KStar"
+  },
+  {
+    "age": 14,
+    "time": "08:24",
+    "currency": "GBR",
+    "type": "buying",
+    "rate": 36.00,
+    "sum": 1200,
+    "city": "Lutsk",
+    "contact": "Life"
   }
 ]

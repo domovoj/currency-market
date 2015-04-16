@@ -21,43 +21,29 @@
 			$.each(data, function(k, v) {
 				$scope.cities[k] = {'city': v.city};
 			});
-
-			var newArrCities = [];
-			for (var i = 0; i < $scope.cities.length; i++) {
-				var flag = true;
-				for (var j = i+1; j < $scope.cities.length; j++) {
-					if($scope.cities[i].city === $scope.cities[j].city) {
-						flag = false;
-					}
-				}
-				if(flag) {
-					newArrCities.push($scope.cities[i]);
-				}
-			}
-			$scope.cities = newArrCities;
-
-			//------------------------------------- This code must be one function for each array ----------------//
+			$scope.cities = (getUniObj($scope.cities,'city'));
 
 			$scope.currency = [];
 			$.each(data, function(k, v) {
 				$scope.currency[k] = {'currency': v.currency};
 			});
+			$scope.currency = (getUniObj($scope.currency,'currency'));
 
-			var newArrCurrency = [];
-			for (var i = 0; i < $scope.currency.length; i++) {
-				var flag = true;
-				for (var j = i+1; j < $scope.currency.length; j++) {
-					if($scope.currency[i].currency === $scope.currency[j].currency) {
-						flag = false;
+			function getUniObj(arr, param) {
+				var result = [];
+				for (var i = 0; i < arr.length; i++) {
+					var flag = true;
+					for (var j = i+1; j < arr.length; j++) {
+						if(arr[i][param] === arr[j][param]) {
+							flag = false;
+						}
+					}
+					if(flag) {
+						result.push(arr[i]);
 					}
 				}
-				if(flag) {
-					newArrCurrency.push($scope.currency[i]);
-				}
+				return result;
 			}
-			$scope.currency = newArrCurrency;
-
-			//--------------------------------------- end -------------------------------------------------------//
 
 			var inv = true;
 			var orderValue ='';

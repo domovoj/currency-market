@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" ng-app="auctionApp" ng-controller="currencyController">
+<head>
+	<meta charset="utf-8">
+	<title>Currency market</title>
+	<link rel="stylesheet" href="css/main.css">
+
+	<!--Vendor scripts-->
+	<script src="js/vendor/angular.min.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/underscore.js"></script>
+
+	<!--Angular application-->
+	<script src="js/app.js"></script>
+	<script src="js/controllers/controllers.js"></script>
+	<script src="js/filters/filters.js"></script>
+
+	<!--Chart-->
+	<script src="js/highstock.js"></script>
+	<script src="js/modules/exporting.js"></script>
+	<script src="js/chart.js"></script>
+
+	<!--Other scripts-->
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<h1>Selling and buying currency</h1>
+	<div class="filter-panel">
+		<div class="region-filter">
+			<label for="region">City:</label>
+			<select name="region" id="region" ng-model="regionOrder">
+				<option value="">All cities</option>
+				<option ng-repeat="city in cities" value="{{city.city}}">{{city.city}}</option>
+			</select>
+		</div>
+		<div class="currency-filter">
+			<label for="currency">Currency:</label>
+			<select name="currency" id="currency" ng-model="currencyOrder">
+				<option value="">All Currencies</option>
+				<option ng-repeat="currencyItem in currency" value="{{currencyItem.currency}}">{{currencyItem.currency}}</option>
+			</select>
+		</div>
+		<div class="operation-filter">
+			<label for="currency">Operation:</label>
+			<select name="type" id="type" ng-model="typeOrder">
+				<option value="">All operations</option>
+				<option value="Selling">Selling</option>
+				<option value="Buy">Buying</option>
+			</select>
+		</div>
+	</div>
+	<table class="currency-table">
+		<thead>
+			<tr>
+				<th ng-click="setOrder('time')">Time <span>{{arrow | arrowFilter}}</span></th>
+				<th ng-click="setOrder('currency')">Currency <span>{{arrow | arrowFilter}}</span></th>
+				<th ng-click="setOrder('type')">Type <span>{{arrow | arrowFilter}}</span></th>
+				<th ng-click="setOrder('rate')">Rate <span>{{arrow | arrowFilter}}</span></th>
+				<th ng-click="setOrder('sum')">Sum <span>{{arrow | arrowFilter}}</span></th>
+				<th ng-click="setOrder('city')">City <span>{{arrow | arrowFilter}}</span></th>
+				<th ng-click="setOrder('contact')">Contact <span>{{arrow | arrowFilter}}</span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="currency in currencies | filter:regionOrder | filter:currencyOrder | filter:typeOrder | orderBy:ordering">
+				<td>{{currency.time}}</td>
+				<td>{{currency.currency}}</td>
+				<td>{{currency.type}}</td>
+				<td>{{currency.rate | number:4}}</td>
+				<td>{{currency.sum}}</td>
+				<td>{{currency.city}}</td>
+				<td>{{currency.contact}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="chart"></div>
+</div>
+</body>
+</html>

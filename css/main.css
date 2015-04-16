@@ -1,0 +1,128 @@
+table, thead, tbody, tfoot, tr, th, td {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-collapse: inherit;
+	border-spacing: 0;
+	border-color: inherit;
+	vertical-align: inherit;
+	text-align: center;
+	font-weight: inherit;
+	-webkit-border-horizontal-spacing: 0;
+	-webkit-border-vertical-spacing: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	padding:0;
+	margin:0;
+	background: white;
+	font-family: Arial, sans-serif;
+	color: #333333;
+	font-size: 14px;
+}
+
+.container {
+	max-width: 1000px;
+	background: #FFFAF0;
+	margin: 0 auto;
+	height: 100%;
+}
+
+h1 {
+	padding: 10px 0;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+}
+
+.filter-panel {
+	background: #FFD700;
+}
+
+.filter-panel > div {
+	display: inline-block;
+	padding: 15px 10px;
+}
+
+.filter-panel > div label {
+	font-weight: bold;
+}
+
+.currency-table {
+	background: #FFE4C4;
+	width: 100%;
+	border-spacing:0;
+	border-top: 1px solid #ffffff;
+}
+
+.currency-table thead {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.currency-table thead tr th {
+	padding: 5px;
+	border-bottom: 2px solid #ffffff;
+	cursor: pointer;
+	position: relative;
+}
+
+.currency-table thead tr th:hover {
+	background: #fff0bd;
+}
+
+.currency-table thead tr th span {
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	font-weight: bold;
+}
+
+.currency-table tbody {
+	font-size: 12px;
+}
+
+.currency-table tbody tr td {
+	padding: 5px;
+	border-bottom: 1px solid #ffffff;
+}
+
+.currency-table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.currency-table tbody tr {
+	cursor: pointer;
+}
+
+.currency-table tbody tr:hover {
+	background: #fff0bd;
+}
+
+.chart {
+	height: 400px;
+	min-width: 310px
+}
+
+
+
+
+

@@ -1,0 +1,142 @@
+[
+  {
+    "age": 0,
+    "time": "11:23",
+    "currency": "USD",
+    "type": "selling",
+    "rate": 24.75,
+    "sum": 2000,
+    "city": "Lviv",
+    "contact": "MTS"
+  },
+  {
+    "age": 1,
+    "time": "13:24",
+    "currency": "USD",
+    "type": "selling",
+    "rate": 25.40,
+    "sum": 1000,
+    "city": "Kyiv",
+    "contact": "MTS"
+  },
+  {
+    "age": 2,
+    "time": "10:54",
+    "currency": "EUR",
+    "type": "selling",
+    "rate": 26.40,
+    "sum": 4000,
+    "city": "Lviv",
+    "contact": "KStar"
+  },
+  {
+    "age": 3,
+    "time": "07:04",
+    "currency": "EUR",
+    "type": "buying",
+    "rate": 26.00,
+    "sum": 500,
+    "city": "Kyiv",
+    "contact": "Life"
+  },
+  {
+    "age": 4,
+    "time": "02:56",
+    "currency": "PLN",
+    "type": "buying",
+    "rate": 6.55,
+    "sum": 5500,
+    "city": "Lviv",
+    "contact": "Life"
+  },
+  {
+    "age": 5,
+    "time": "17:37",
+    "currency": "USD",
+    "type": "buying",
+    "rate": 24.55,
+    "sum": 2300,
+    "city": "Lviv",
+    "contact": "KStar"
+  },
+  {
+    "age": 6,
+    "time": "19:07",
+    "currency": "USD",
+    "type": "selling",
+    "rate": 24.50,
+    "sum": 300,
+    "city": "Kyiv",
+    "contact": "MTS"
+  },
+  {
+    "age": 7,
+    "time": "15:50",
+    "currency": "USD",
+    "type": "buying",
+    "rate": 23.85,
+    "sum": 8000,
+    "city": "Kyiv",
+    "contact": "KStar"
+  },
+  {
+    "age": 8,
+    "time": "14:41",
+    "currency": "EUR",
+    "type": "selling",
+    "rate": 26.00,
+    "sum": 2500,
+    "city": "Kyiv",
+    "contact": "Life"
+  },
+  {
+    "age": 9,
+    "time": "11:29",
+    "currency": "PLN",
+    "type": "buying",
+    "rate": 6.40,
+    "sum": 10000,
+    "city": "Kyiv",
+    "contact": "KStar"
+  },
+  {
+    "age": 10,
+    "time": "13:01",
+    "currency": "PLN",
+    "type": "selling",
+    "rate": 6.75,
+    "sum": 4000,
+    "city": "Kyiv",
+    "contact": "MTS"
+  },
+  {
+    "age": 11,
+    "time": "12:19",
+    "currency": "EUR",
+    "type": "buying",
+    "rate": 26.10,
+    "sum": 1100,
+    "city": "Lviv",
+    "contact": "KStar"
+  },
+  {
+    "age": 12,
+    "time": "09:06",
+    "currency": "PLN",
+    "type": "selling",
+    "rate": 6.65,
+    "sum": 5500,
+    "city": "Lviv",
+    "contact": "Life"
+  },
+  {
+    "age": 13,
+    "time": "18:16",
+    "currency": "PLN",
+    "type": "selling",
+    "rate": 6.60,
+    "sum": 500,
+    "city": "Lutsk",
+    "contact": "KStar"
+  }
+]

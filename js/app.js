@@ -21,13 +21,13 @@
 			$.each(data, function(k, v) {
 				$scope.cities[k] = {'city': v.city};
 			});
-			$scope.cities = (getUniObj($scope.cities,'city'));
+			$scope.cities = getUniObj($scope.cities,'city');
 
 			$scope.currency = [];
 			$.each(data, function(k, v) {
 				$scope.currency[k] = {'currency': v.currency};
 			});
-			$scope.currency = (getUniObj($scope.currency,'currency'));
+			$scope.currency = getUniObj($scope.currency,'currency');
 
 			function getUniObj(arr, param) {
 				var result = [];
